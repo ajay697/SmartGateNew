@@ -28,7 +28,7 @@ public class SignInActivity extends AppCompatActivity {
     }
 
     public void onSignInButtonClicked(View view){
-        Intent profileIntent = new Intent(this,ProfileActivity.class);
+        Intent profileIntent = new Intent(this,MainActivity.class);
         startActivity(profileIntent);
     }
 }

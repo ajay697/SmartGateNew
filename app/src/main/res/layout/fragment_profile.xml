@@ -1,51 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfileActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.ProfileFragment">
 
-    <androidx.appcompat.widget.Toolbar
+
+    <RelativeLayout
         android:id="@+id/toolbar_profile"
         android:layout_width="match_parent"
-        android:layout_height="68dp"
+        android:layout_height="104dp"
         android:layout_marginTop="20dp"
-        android:background="@color/gradient_start"
+        android:background="#F1F9FF"
         android:paddingTop="15dp"
         android:paddingBottom="11dp"
-        android:paddingLeft="32dp">
-
+        android:paddingLeft="22dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Vishva Sharma"
-                android:textColor="#ffffff"
-                android:textSize="20sp"/>
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_person"
+                android:background="@drawable/image_background"
+                android:layout_marginRight="16dp"
+                android:tint="@color/profile_text_color"/>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="+91 9650184918 | "
-                    android:textColor="#ffffff"
-                    android:textSize="12sp"/>
-                <TextView
-                    android:layout_width="wrap_content"
+                    android:text="Vishva Sharma"
+                    android:textColor="@color/profile_text_color"
+                    android:textSize="20sp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="vishvasharma.iitd@gmail.com"
-                    android:textColor="#ffffff"
-                    android:textSize="12sp"/>
-            </LinearLayout>
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+91 9650184918 | "
+                        android:textColor="@color/profile_text_color"
+                        android:textSize="12sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="vishvasharma.iitd@gmail.com"
+                        android:textColor="@color/profile_text_color"
+                        android:textSize="12sp"/>
+                </LinearLayout>
 
+            </LinearLayout>
         </LinearLayout>
-    </androidx.appcompat.widget.Toolbar>
+
+
+    </RelativeLayout>
 
     <LinearLayout
         android:id="@+id/addres_layout"
@@ -62,7 +78,7 @@
             android:paddingBottom="8dp"
             android:text="ID-#654651"
             android:textStyle="bold"
-            android:textColor="@color/gradient_start"
+            android:textColor="@color/profile_text_color"
             android:textSize="17sp"/>
         <TextView
             android:layout_width="wrap_content"
@@ -71,13 +87,14 @@
             android:paddingTop="8dp"
             android:paddingBottom="8dp"
             android:text="D 902, RAMKY TOWERS"
-            android:textColor="@color/gradient_start"
+            android:textColor="@color/profile_text_color"
             android:textSize="12sp"
             android:textStyle="bold"/>
 
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/about_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -94,14 +111,14 @@
                 android:layout_height="16dp"
                 android:layout_marginTop="3dp"
                 android:src="@drawable/ic_person"
-                android:background="@color/gradient_start"/>
+                android:background="@color/profile_text_color"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="33dp"
                 android:textSize="16sp"
                 android:text="App Notification Settings"
-                android:textColor="@color/gradient_start"/>
+                android:textColor="@color/profile_text_color"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -113,14 +130,14 @@
                 android:layout_height="16dp"
                 android:layout_marginTop="3dp"
                 android:src="@drawable/ic_https"
-                android:background="@color/gradient_start"/>
+                android:background="@color/profile_text_color"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="33dp"
                 android:textSize="16sp"
                 android:text="Tell a friend about SmartGate"
-                android:textColor="@color/gradient_start"/>
+                android:textColor="@color/profile_text_color"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -132,14 +149,14 @@
                 android:layout_height="16dp"
                 android:layout_marginTop="3dp"
                 android:src="@drawable/ic_do_not_disturb"
-                android:background="@color/gradient_start"/>
+                android:background="@color/profile_text_color"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="33dp"
                 android:textSize="16sp"
-                android:text="Support &amp; Frrdback"
-                android:textColor="@color/gradient_start"/>
+                android:text="Support &amp; Feedback"
+                android:textColor="@color/profile_text_color"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -151,14 +168,14 @@
                 android:layout_height="16dp"
                 android:layout_marginTop="3dp"
                 android:src="@drawable/baseline_help"
-                android:background="@color/gradient_start"/>
+                android:background="@color/profile_text_color"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="33dp"
                 android:textSize="16sp"
                 android:text="Logout"
-                android:textColor="@color/gradient_start"/>
+                android:textColor="@color/profile_text_color"/>
         </LinearLayout>
     </LinearLayout>
 
@@ -166,7 +183,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginBottom="28dp">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -181,7 +199,7 @@
             android:text="Terms &amp; Conditions | Privacy Policy"
             android:textSize="12dp"
             android:textAlignment="center"
-            android:textColor="@color/gradient_start"/>
+            android:textColor="@color/profile_text_color"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
