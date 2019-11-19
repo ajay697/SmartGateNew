@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 import androidx.appcompat.widget.Toolbar;
@@ -12,7 +13,7 @@ import androidx.appcompat.widget.Toolbar;
 public class SignInActivity extends AppCompatActivity {
 
     private Toolbar toolbar;
-    private ImageButton mSignInButton;
+    private Button mSignInButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,7 +25,7 @@ public class SignInActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setTitle("");
 
-        mSignInButton = (ImageButton)findViewById(R.id.sign_in_button);
+        mSignInButton = (Button)findViewById(R.id.sign_in_button);
     }
 
     public void onSignInButtonClicked(View view){
