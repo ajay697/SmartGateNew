@@ -54,10 +54,8 @@ public class ActivityFragment extends Fragment {
     }
 
     private void recyclerViewData(){
-        OrdersModel orders = new OrdersModel("Delivery","PreAllowed by Aditya Chaurasiya",
-                "Delivering to d-24","Sai nath","1 mg","11:21 AM");
+        OrdersModel orders = new OrdersModel("Delivery","PreAllowed by Aditya Chaurasiya","Sai nath","1 mg","11:21 AM");
         ordersModelList.add(orders);
-
         mAdapter.notifyDataSetChanged();
     }
 

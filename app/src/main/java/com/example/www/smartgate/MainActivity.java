@@ -88,7 +88,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void onAddButtonClicked(View view){
         toolbarTitleTextView.setText("Quick Actions");
-        toolbarTitleTextView.setGravity(Gravity.CENTER|Gravity.CENTER_HORIZONTAL);
+        toolbarTitleTextView.setTextColor(getResources().getColor(R.color.profile_text_color));
+        toolbarTitleTextView.setGravity(Gravity.CENTER);
         Fragment mFragment = new QuickActionsFragment();
         loadFragment(mFragment);
     }

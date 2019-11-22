@@ -4,18 +4,17 @@ import java.net.URL;
 
 public class OrdersModel {
     private String serviceName;
-    private URL imageUrl;
+    private String imageUrl;
     private String orderedBy;
     private String serviceType;
     private String serviceProviderName;
     private String serviceProviderId;
     private String time;
-    private String serviceStatus;
 
     public OrdersModel() {
     }
 
-    public OrdersModel(String serviceName, String orderedBy,String serviceStatus,
+    public OrdersModel(String serviceName, String orderedBy,
                        String serviceProviderName,
                        String serviceProviderId, String time) {
         this.serviceName = serviceName;
@@ -25,7 +24,7 @@ public class OrdersModel {
         this.serviceProviderName = serviceProviderName;
         this.serviceProviderId = serviceProviderId;
         this.time = time;
-        this.serviceStatus = serviceStatus;
+
     }
 
     public String getServiceName() {
@@ -36,11 +35,11 @@ public class OrdersModel {
         this.serviceName = serviceName;
     }
 
-    public URL getImageUrl() {
+    public String getImageUrl() {
         return imageUrl;
     }
 
-    public void setImageUrl(URL imageUrl) {
+    public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
     }
 
@@ -84,11 +83,5 @@ public class OrdersModel {
         this.time = time;
     }
 
-    public String getServiceStatus() {
-        return serviceStatus;
-    }
 
-    public void setServiceStatus(String serviceStatus) {
-        this.serviceStatus = serviceStatus;
-    }
 }

@@ -4,11 +4,13 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.example.www.smartgate.R;
 
 import java.util.List;
@@ -36,10 +38,10 @@ public class OrdersAdapter extends RecyclerView.Adapter<OrdersAdapter.MyViewHold
         OrdersModel mOrders = ordersModelsList.get(position);
         holder.serviceNameTextView.setText(mOrders.getServiceName());
         holder.orderedByTextView.setText(mOrders.getOrderedBy());
-        holder.serviceStatusTextView.setText(mOrders.getServiceStatus());
         holder.timeTextView.setText(mOrders.getTime());
         holder.serviceProviderNameTextView.setText(mOrders.getServiceProviderName());
         holder.serviceProviderIdTextView.setText(mOrders.getServiceProviderId());
+
     }
 
     @Override
@@ -48,13 +50,13 @@ public class OrdersAdapter extends RecyclerView.Adapter<OrdersAdapter.MyViewHold
     }
 
     public static class MyViewHolder extends RecyclerView.ViewHolder{
-        public TextView serviceNameTextView,orderedByTextView,serviceStatusTextView,
+        public TextView serviceNameTextView,orderedByTextView,
         serviceProviderNameTextView,serviceProviderIdTextView,timeTextView;
+        public ImageView sellerImage,productImage,iconImage;
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             serviceNameTextView = (TextView)itemView.findViewById(R.id.service_name_textView);
             orderedByTextView = (TextView)itemView.findViewById(R.id.service_orderedBy_textView);
-            serviceStatusTextView = (TextView)itemView.findViewById(R.id.service_status_textView);
             serviceProviderNameTextView = (TextView)itemView.findViewById(R.id.service_provider_name_textview);
             serviceProviderIdTextView = (TextView)itemView.findViewById(R.id.provider_id_textview);
             timeTextView = (TextView)itemView.findViewById(R.id.time_textView);
