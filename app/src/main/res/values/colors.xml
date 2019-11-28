@@ -11,6 +11,8 @@
 
     <color name="toolbar_arrow">#4CB8C4</color>
 
+
+
 <!--    sign button text color-->
     <color name="sign_in_text_color">#ffffff</color>
     <color name="description_text_color">#4CB8C4</color>

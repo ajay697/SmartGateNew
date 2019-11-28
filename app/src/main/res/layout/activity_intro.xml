@@ -8,14 +8,14 @@
         <LinearLayout
             android:id="@+id/logo_layout"
             android:layout_width="match_parent"
-            android:layout_height="450dp"
+            android:layout_height="@dimen/background_layout"
             android:orientation="vertical"
-            android:background="#2699FB">
+            android:background="@color/profile_text_color">
             <LinearLayout
                 android:layout_width="@dimen/dots_layout_width"
                 android:layout_height="@dimen/dots_layout_height"
                 android:orientation="horizontal"
-                android:layout_marginTop="430dp"
+                android:layout_marginTop="@dimen/intro_layout_margin_top"
                 android:layout_gravity="center_horizontal">
 
                 <ImageView
@@ -80,7 +80,7 @@
                     android:textAllCaps="true"
                     android:layout_gravity="center_horizontal"
                     android:textSize="@dimen/text_heder_size"
-                    android:textColor="#2699FB"
+                    android:textColor="@color/profile_text_color"
                     android:textStyle="bold"
                     android:fontFamily="Arial"/>
             </LinearLayout>
@@ -108,7 +108,7 @@
             android:layout_height="wrap_content"
             android:text="@string/description_text"
             android:gravity="center_horizontal"
-            android:textColor="#2699FB"
+            android:textColor="@color/profile_text_color"
             android:textSize="@dimen/description_text_size"/>
     </LinearLayout>
 
@@ -119,7 +119,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/button_margin"
-        android:background="#2699FB"
+        android:background="@color/profile_text_color"
         android:layout_alignParentBottom="true"
         android:text="@string/sign_in_text"
         android:textColor="@color/sign_in_text_color"

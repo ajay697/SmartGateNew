@@ -14,12 +14,12 @@
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="50dp">
+            android:layout_height="@dimen/toolbar_height">
             <TextView
                 android:id="@+id/toolbar_title_textView"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:textColor="#000000"
+                android:textColor="@color/text_header_color"
                 android:textStyle="bold"/>
         </androidx.appcompat.widget.Toolbar>
 
@@ -27,7 +27,7 @@
             android:id="@+id/fragment_container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginBottom="60dp"
+            android:layout_marginBottom="@dimen/frame_bottom_margin"
             app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
 
 
@@ -44,7 +44,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:background="#ffffff"
+        android:background="@color/sign_in_text_color"
         app:itemIconTint="@color/btm_nav_item_color"
         app:itemTextColor="@color/btm_nav_item_color"
         app:menu="@menu/nav_menu_item"
